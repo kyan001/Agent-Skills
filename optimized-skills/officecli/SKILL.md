@@ -6,7 +6,7 @@ description: Create, analyze, proofread, and modify Office documents (.docx, .xl
 # officecli
 
 > **Derived from [iOfficeAI/OfficeCLI](https://github.com/iOfficeAI/OfficeCLI) (Apache 2.0)**
-> Changes: replaced `curl | bash` install with `npm install -g @officecli/officecli`; added libicu workaround
+> Changes: replaced original installation method; added libicu workaround
 
 AI-friendly CLI for .docx, .xlsx, .pptx. Single binary, no dependencies, no Office installation needed.
 
