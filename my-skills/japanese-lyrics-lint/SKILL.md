@@ -1,5 +1,5 @@
 ---
-name: Japanese-Lyrics-Lint
+name: japanese-lyrics-lint
 description: "日文歌词格式规范化：汉字注音、平假名还原汉字、片假名标注原词、逐行直译"
 ---
 
