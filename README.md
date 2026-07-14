@@ -35,9 +35,9 @@ hermes skills install kyan001/Agent-Skills/skills/officecli
 
 # Add as a tap (add once, install many)
 hermes skills tap add kyan001/Agent-Skills
-hermes skills install japanese-lyrics-lint
-hermes skills install english-lyrics-lint
-hermes skills install officecli
+hermes skills install kyan001/Agent-Skills/japanese-lyrics-lint
+hermes skills install kyan001/Agent-Skills/english-lyrics-lint
+hermes skills install kyan001/Agent-Skills/officecli
 ```
 
 ## Skills
