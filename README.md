@@ -7,22 +7,16 @@ Skills for AI agents.
 ## Install
 
 ### skills.sh (Claude Code, Cursor, Codex, etc.)
+* You can replace `npx` with `bunx` if you use bunx.
 ```bash
 # Install interactively
-npx skills add kyan001/Agent-Skills  # using npx
-bunx skills add kyan001/Agent-Skills  # using bunx
+npx skills add kyan001/Agent-Skills
 
 
-# Install a specific skill (using npx)
+# Install a specific skill
 npx skills add kyan001/Agent-Skills --skill japanese-lyrics-lint
 npx skills add kyan001/Agent-Skills --skill english-lyrics-lint
 npx skills add kyan001/Agent-Skills --skill officecli
-
-
-# Install a specific skill (using bunx)
-bunx skills add kyan001/Agent-Skills --skill japanese-lyrics-lint
-bunx skills add kyan001/Agent-Skills --skill english-lyrics-lint
-bunx skills add kyan001/Agent-Skills --skill officecli
 ```
 
 ### Hermes Agent

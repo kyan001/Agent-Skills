@@ -7,22 +7,16 @@ AI agent 技能集。
 ## 安装
 
 ### skills.sh (Claude Code, Cursor, Codex 等)
+* 可将 `npx` 替换为 `bunx`。
 ```bash
 # 互动安装技能
-npx skills add kyan001/Agent-Skills  # 用 npx
-bunx skills add kyan001/Agent-Skills  # 用 bunx
+npx skills add kyan001/Agent-Skills
 
 
-# 安装指定技能（用 npx）
+# 安装指定技能
 npx skills add kyan001/Agent-Skills --skill japanese-lyrics-lint
 npx skills add kyan001/Agent-Skills --skill english-lyrics-lint
 npx skills add kyan001/Agent-Skills --skill officecli
-
-
-# 安装指定技能（用 bunx）
-bunx skills add kyan001/Agent-Skills --skill japanese-lyrics-lint
-bunx skills add kyan001/Agent-Skills --skill english-lyrics-lint
-bunx skills add kyan001/Agent-Skills --skill officecli
 ```
 
 ### Hermes Agent
