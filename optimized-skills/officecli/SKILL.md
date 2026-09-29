@@ -180,11 +180,11 @@ for p in $PATHS; do officecli set deck.pptx "$p" --prop fill=FF0000; done
 
 ### Key properties
 
-- **Selection survives file edits.** Paths use stable `@id=` form.
-- **All connected browsers share one selection.** Last-write-wins.
-- **Same-file single-watch.** A given file can have only one watch process at a time.
-- **Group shapes select as a whole.** Drilling into individual children of a group is not supported in v1.
-- **Coverage:** `.pptx` shapes/pictures/tables/charts/connectors/groups; `.docx` top-level paragraphs and tables. Inherited layout/master decorations and Word nested elements (table cells, run-level) are not addressable. **`.xlsx` does not emit `data-path`** — `mark`/`selection` on xlsx always resolve `stale=true` (v2 candidate).
+* **Selection survives file edits.** Paths use stable `@id=` form.
+* **All connected browsers share one selection.** Last-write-wins.
+* **Same-file single-watch.** A given file can have only one watch process at a time.
+* **Group shapes select as a whole.** Drilling into individual children of a group is not supported in v1.
+* **Coverage:** `.pptx` shapes/pictures/tables/charts/connectors/groups; `.docx` top-level paragraphs and tables. Inherited layout/master decorations and Word nested elements (table cells, run-level) are not addressable. **`.xlsx` does not emit `data-path`** — `mark`/`selection` on xlsx always resolve `stale=true` (v2 candidate).
 
 ### Marks — edit proposals waiting for review
 
@@ -244,10 +244,10 @@ officecli set slides.pptx / --find draft --replace final
 **Path controls search scope:** `/` = whole document, `/body/p[1]` or `/slide[N]/shape[M]` = specific element, `/header[1]` / `/footer[1]` = headers/footers.
 
 **Notes:**
-- Case-sensitive by default. Case-insensitive: `--prop 'find=(?i)error' --prop regex=true`
-- Matches work across run boundaries
-- No match = silent success. `--json` includes `"matched": N`
-- **Excel:** only `find` + `replace` supported (no find + format props)
+* Case-sensitive by default. Case-insensitive: `--prop 'find=(?i)error' --prop regex=true`
+* Matches work across run boundaries
+* No match = silent success. `--json` includes `"matched": N`
+* **Excel:** only `find` + `replace` supported (no find + format props)
 
 ### add — add elements or clone
 
@@ -380,10 +380,10 @@ officecli add-part <file> <parent>                   # create new document part 
 `officecli load_skill <name>` — output is a SKILL.md, follow its rules.
 
 **Loading rule**:
-- Pick the most specific match in "When to use"; if none fits, load the format default (`word` / `pptx` / `excel`).
-- Scenes already contain the format default's rules — load **one** skill per artifact, never stack.
-- Loaded rules persist across turns; don't re-load each reply.
-- Two distinct artifacts → two separate loads.
+* Pick the most specific match in "When to use"; if none fits, load the format default (`word` / `pptx` / `excel`).
+* Scenes already contain the format default's rules — load **one** skill per artifact, never stack.
+* Loaded rules persist across turns; don't re-load each reply.
+* Two distinct artifacts → two separate loads.
 
 ### Word (.docx)
 
@@ -415,8 +415,8 @@ Example: a fundraising deck task → `officecli load_skill pitch-deck` → use t
 
 ## Notes
 
-- Paths are **1-based** (XPath convention): `'/body/p[3]'` = third paragraph
-- `--index` is **0-based** (array convention): `--index 0` = first position
-- **Excel exception**: for `add --type row` and `add --type col`, `--index N` is **1-based** (matches OOXML RowIndex / column letter index). `--index 5` inserts at row 5 / column 5.
-- After modifications, verify with `validate` and/or `view issues`
-- **When unsure**, run `officecli help <format> <element>` instead of guessing
+* Paths are **1-based** (XPath convention): `'/body/p[3]'` = third paragraph
+* `--index` is **0-based** (array convention): `--index 0` = first position
+* **Excel exception**: for `add --type row` and `add --type col`, `--index N` is **1-based** (matches OOXML RowIndex / column letter index). `--index 5` inserts at row 5 / column 5.
+* After modifications, verify with `validate` and/or `view issues`
+* **When unsure**, run `officecli help <format> <element>` instead of guessing
