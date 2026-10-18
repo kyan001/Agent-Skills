@@ -131,3 +131,7 @@ description: "媒体归档与命名：对任意媒体库，按库现有类目和
 | 年份 | `release_date` / `first_air_date` |
 | 季年份、集名 | `season.air_date`、`episode.name`（库语言） |
 | 系列 | `belongs_to_collection.name` |
+
+## 严格匹配
+
+默认按本文件命名。需要适配具体播放器的严格匹配时，读 `references/scraping.md`。
