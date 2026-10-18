@@ -1,6 +1,6 @@
 # Agent-Skills
 
-中文版 · [**English**](README.md)
+中文版 · [English](README.md)
 
 AI agent 技能集。
 
@@ -18,6 +18,7 @@ npx skills add kyan001/Agent-Skills
 npx skills add kyan001/Agent-Skills --skill japanese-lyrics-lint
 npx skills add kyan001/Agent-Skills --skill english-lyrics-lint
 npx skills add kyan001/Agent-Skills --skill dict
+npx skills add kyan001/Agent-Skills --skill media-organizer
 npx skills add kyan001/Agent-Skills --skill officecli
 ```
 
@@ -28,6 +29,7 @@ npx skills add kyan001/Agent-Skills --skill officecli
 hermes skills install kyan001/Agent-Skills/my-skills/japanese-lyrics-lint
 hermes skills install kyan001/Agent-Skills/my-skills/english-lyrics-lint
 hermes skills install kyan001/Agent-Skills/my-skills/dict
+hermes skills install kyan001/Agent-Skills/my-skills/media-organizer
 hermes skills install kyan001/Agent-Skills/optimized-skills/officecli
 
 
@@ -36,11 +38,13 @@ hermes skills tap add kyan001/Agent-Skills
 hermes skills install kyan001/Agent-Skills/japanese-lyrics-lint
 hermes skills install kyan001/Agent-Skills/english-lyrics-lint
 hermes skills install kyan001/Agent-Skills/dict
+hermes skills install kyan001/Agent-Skills/media-organizer
 hermes skills install kyan001/Agent-Skills/officecli
 ```
 
 ## 技能列表
-* [Japanese-Lyrics-Lint](my-skills/japanese-lyrics-lint/SKILL.md)：日文歌词格式化——汉字注音、平假名还原汉字、片假名标注原词、逐行直译。
-* [English-Lyrics-Lint](my-skills/english-lyrics-lint/SKILL.md)：检查和修正英文歌词格式——歌曲标题大小写、歌词大小写规则。
-* [Dict](my-skills/dict/SKILL.md)：解析英文/日文单词、短语、句子——释义、词根词缀、结构与语用。
+* [Japanese-Lyrics-Lint](my-skills/japanese-lyrics-lint/SKILL.md)：日文歌词格式化（汉字注音、平假名还原汉字、片假名标注原词、逐行直译）。
+* [English-Lyrics-Lint](my-skills/english-lyrics-lint/SKILL.md)：检查和修正英文歌词格式（歌曲标题大小写、歌词大小写规则）。
+* [Dict](my-skills/dict/SKILL.md)：解析英文/日文单词、短语、句子（释义、词根词缀、结构与语用）。
+* [Media-Organizer](my-skills/media-organizer/SKILL.md)：为任意媒体库决定文件位置与命名（本地标题与原名取自元数据源，默认 TMDB；含年份、系列/季/集编号、语言与画质变体）。
 * [OfficeCLI (第三方)](optimized-skills/officecli/SKILL.md)：通过命令行创建、分析、校对和修改 Office 文档（.docx、.xlsx、.pptx）。
